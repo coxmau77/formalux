@@ -1,412 +1,437 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formalux — Drywall · Iluminación · Domótica</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formalux — Drywall · Iluminación · Domótica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-inner">
-    <span class="logo">
-      <a href="#">Forma<span>lux</span></a>
-    </span>
-    <ul class="nav-links">
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#proceso">Proceso</a></li>
-      <li><a href="#beneficios">Beneficios</a></li>
-      <li><a href="#confianza">Nosotros</a></li>
-    </ul>
-    <button class="nav-cta">Solicitar presupuesto</button>
-    <button class="menu-btn" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <span class="logo">
+        <a href="#">Forma<span>lux</span></a>
+      </span>
+      <ul class="nav-links" id="mobile-menu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#confianza">Nosotros</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-pressed="false">🌙 Dark mode</button>
+        </li>
+      </ul>
+      <button class="nav-cta">Solicitar presupuesto</button>
+      <button class="menu-btn" aria-label="Menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-<!-- HERO -->
-<section class="hero-section">
-<div id="hero">
-  <div class="fade-in">
-    <span class="hero-tag">Drywall · Iluminación · Domótica</span>
-    <h1>Transformá tus espacios con <em>diseño inteligente</em></h1>
-    <p class="hero-sub">Divisiones en drywall + iluminación moderna + control desde tu celular. Soluciones rápidas, funcionales y listas para usar en hogares y oficinas.</p>
-    <div class="hero-btns">
-      <a href="#cta" class="btn-primary">Solicitar presupuesto</a>
-      <a href="#servicios" class="btn-outline">Ver servicios</a>
-    </div>
-  </div>
-  <div class="hero-visual fade-in">
-    <div class="vis-grid">
-      <div class="vis-card">
-        <div class="vis-icon">🏗️</div>
-        <div class="vis-label">Drywall</div>
-        <div class="vis-val">+120 obras</div>
-        <div class="vis-badge">Hogares y oficinas</div>
-      </div>
-      <div class="vis-card">
-        <div class="vis-icon">💡</div>
-        <div class="vis-label">Iluminación LED</div>
-        <div class="vis-val">Eficiente</div>
-        <div class="vis-badge">Integrada</div>
-      </div>
-      <div class="vis-card">
-        <div class="vis-icon">📱</div>
-        <div class="vis-label">Domótica</div>
-        <div class="vis-val">Control total</div>
-        <div class="vis-badge">Desde tu celular</div>
-      </div>
-      <div class="vis-card">
-        <div class="vis-icon">⚡</div>
-        <div class="vis-label">Instalación</div>
-        <div class="vis-val">Rápida</div>
-        <div class="vis-badge">Sin complicaciones</div>
-      </div>
-    </div>
-    <div class="vis-bottom">
-      <div class="vis-tagline">Soluciones completas</div>
-      <div class="vis-title">Todo integrado desde el primer día</div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- PROBLEMA -->
-<section id="problema">
-<div class="container">
-  <div class="fade-in">
-    <div class="section-label">El problema</div>
-    <h2 class="section-title">¿Tu espacio no está bien aprovechado?</h2>
-    <p class="section-body">Ambientes mal distribuidos, poca iluminación o instalaciones antiguas pueden afectar tu comodidad y productividad. Muchas remodelaciones terminan siendo lentas, desordenadas y poco funcionales.</p>
-  </div>
-  <div class="pain-grid">
-    <div class="pain-card fade-in">
-      <div class="pain-icon">🏚️</div>
-      <h3>Ambientes mal distribuidos</h3>
-      <p>Los espacios sin divisiones pensadas generan ruido, falta de privacidad y pérdida de metros útiles.</p>
-    </div>
-    <div class="pain-card fade-in">
-      <div class="pain-icon">🌑</div>
-      <h3>Iluminación deficiente</h3>
-      <p>La luz incorrecta cansa la vista, genera ambientes fríos y resta valor a cualquier propiedad.</p>
-    </div>
-    <div class="pain-card fade-in">
-      <div class="pain-icon">🔧</div>
-      <h3>Obras lentas y costosas</h3>
-      <p>Remodelaciones sin planificación se estiran, generan desorden y terminan saliendo el doble de lo presupuestado.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- SOLUCIÓN -->
-<section id="solucion">
-<div class="container">
-  <div class="fade-in">
-    <div class="section-label">Nuestra propuesta</div>
-    <h2 class="section-title">Lo resolvemos de forma simple y profesional</h2>
-    <p class="section-body">Diseñamos e implementamos espacios modernos combinando construcción, iluminación y control inteligente. Todo integrado desde el primer día.</p>
-  </div>
-  <div class="sol-grid">
-    <div class="sol-card fade-in">
-      <div class="sol-num">01</div>
-      <h3>Construcción en drywall</h3>
-      <p>Divisiones rápidas, limpias y económicas. Adaptamos cada espacio a tus necesidades reales, sin demoliciones innecesarias.</p>
-    </div>
-    <div class="sol-card fade-in">
-      <div class="sol-num">02</div>
-      <h3>Iluminación eficiente</h3>
-      <p>Spots, tiras LED y cielorrasos integrados. Diseñamos la luz de cada ambiente para potenciar su funcionalidad y estética.</p>
-    </div>
-    <div class="sol-card fade-in">
-      <div class="sol-num">03</div>
-      <h3>Control inteligente</h3>
-      <p>Domótica real desde tu celular. Controlá la iluminación y ambientes con tu smartphone desde donde estés.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- SERVICIOS -->
-<section id="servicios">
-<div class="container">
-  <div class="serv-layout">
-    <div>
+  <!-- HERO -->
+  <section class="hero-section">
+    <div id="hero">
       <div class="fade-in">
-        <div class="section-label">Servicios</div>
-        <h2 class="section-title">¿Qué podemos hacer por vos?</h2>
-        <p class="section-body section-body-offset">Cada proyecto incluye planificación, materiales y ejecución. Sin sorpresas.</p>
-      </div>
-      <div class="serv-list">
-        <div class="serv-item fade-in">
-          <div class="serv-check"></div>
-          <div>
-            <strong>Divisiones de ambientes con drywall</strong>
-            <span>Separación de espacios rápida, limpia y con aislación acústica.</span>
-          </div>
-        </div>
-        <div class="serv-item fade-in">
-          <div class="serv-check"></div>
-          <div>
-            <strong>Cielorrasos con iluminación integrada</strong>
-            <span>Terminación premium con spots embutidos y tiras LED.</span>
-          </div>
-        </div>
-        <div class="serv-item fade-in">
-          <div class="serv-check"></div>
-          <div>
-            <strong>Instalación de spots y tiras LED</strong>
-            <span>Iluminación moderna, eficiente y de bajo consumo energético.</span>
-          </div>
-        </div>
-        <div class="serv-item fade-in">
-          <div class="serv-check"></div>
-          <div>
-            <strong>Sistemas de iluminación inteligente</strong>
-            <span>Control desde tu celular o por voz. Escenas y programaciones.</span>
-          </div>
-        </div>
-        <div class="serv-item fade-in">
-          <div class="serv-check"></div>
-          <div>
-            <strong>Remodelaciones rápidas para hogares y oficinas</strong>
-            <span>Obras completas con plazo cumplido y entrega lista para usar.</span>
-          </div>
+        <span class="hero-tag">Drywall · Iluminación · Domótica</span>
+        <h1>Transformá tus espacios con <em>diseño inteligente</em></h1>
+        <p class="hero-sub">Divisiones en drywall + iluminación moderna + control desde tu celular. Soluciones rápidas,
+          funcionales y listas para usar en hogares y oficinas.</p>
+        <div class="hero-btns">
+          <a href="#cta" class="btn-primary">Solicitar presupuesto</a>
+          <a href="#servicios" class="btn-outline">Ver servicios</a>
         </div>
       </div>
-    </div>
-    <div class="fade-in">
-      <div class="serv-visual">
-        <div class="serv-visual-title">¿Por qué elegirnos?</div>
-        <div class="stat-row">
-          <div class="stat-box">
-            <div class="stat-num">+120<span>obras</span></div>
-            <div class="stat-txt">Proyectos realizados</div>
+      <div class="hero-visual fade-in">
+        <div class="vis-grid">
+          <div class="vis-card">
+            <div class="vis-icon">🏗️</div>
+            <div class="vis-label">Drywall</div>
+            <div class="vis-val">+120 obras</div>
+            <div class="vis-badge">Hogares y oficinas</div>
           </div>
-          <div class="stat-box">
-            <div class="stat-num">5<span>★</span></div>
-            <div class="stat-txt">Calificación promedio</div>
+          <div class="vis-card">
+            <div class="vis-icon">💡</div>
+            <div class="vis-label">Iluminación LED</div>
+            <div class="vis-val">Eficiente</div>
+            <div class="vis-badge">Integrada</div>
           </div>
-          <div class="stat-box">
-            <div class="stat-num">48<span>hs</span></div>
-            <div class="stat-txt">Respuesta de presupuesto</div>
+          <div class="vis-card">
+            <div class="vis-icon">📱</div>
+            <div class="vis-label">Domótica</div>
+            <div class="vis-val">Control total</div>
+            <div class="vis-badge">Desde tu celular</div>
           </div>
-          <div class="stat-box">
-            <div class="stat-num">100<span>%</span></div>
-            <div class="stat-txt">Garantía en mano de obra</div>
+          <div class="vis-card">
+            <div class="vis-icon">⚡</div>
+            <div class="vis-label">Instalación</div>
+            <div class="vis-val">Rápida</div>
+            <div class="vis-badge">Sin complicaciones</div>
           </div>
         </div>
-        <div class="tech-tags tech-tags-extra-margin">
-          <span class="tag">Drywall</span>
-          <span class="tag">LED</span>
-          <span class="tag">Domótica</span>
-          <span class="tag amber">Sin obra sucia</span>
-          <span class="tag amber">Entrega rápida</span>
-          <span class="tag">Mobile control</span>
-          <span class="tag amber">Garantizado</span>
+        <div class="vis-bottom">
+          <div class="vis-tagline">Soluciones completas</div>
+          <div class="vis-title">Todo integrado desde el primer día</div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</section>
+  </section>
 
-<!-- PROCESO -->
-<section id="proceso">
-<div class="container">
-  <div class="proceso-header fade-in">
-    <div class="section-label">¿Cómo trabajamos?</div>
-    <h2 class="section-title section-title-center">Un proceso simple, sin vueltas</h2>
-  </div>
-  <div class="steps">
-    <div class="step fade-in">
-      <div class="step-num">1</div>
-      <h4>Relevamiento</h4>
-      <p>Visitamos el espacio y entendemos tus necesidades</p>
-    </div>
-    <div class="step fade-in">
-      <div class="step-num">2</div>
-      <h4>Diseño</h4>
-      <p>Planificamos la solución más funcional y estética</p>
-    </div>
-    <div class="step fade-in">
-      <div class="step-num">3</div>
-      <h4>Ejecución</h4>
-      <p>Llevamos a cabo la obra de manera rápida y ordenada</p>
-    </div>
-    <div class="step fade-in">
-      <div class="step-num">4</div>
-      <h4>Instalación</h4>
-      <p>Montamos y configuramos todos los sistemas</p>
-    </div>
-    <div class="step fade-in">
-      <div class="step-num">5</div>
-      <h4>Entrega</h4>
-      <p>Tu espacio listo para usar desde el primer día</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- BENEFICIOS -->
-<section id="beneficios">
-<div class="container">
-  <div class="ben-layout">
-    <div>
+  <!-- PROBLEMA -->
+  <section id="problema">
+    <div class="container">
       <div class="fade-in">
-        <div class="section-label">Beneficios</div>
-        <h2 class="section-title">¿Por qué elegir este servicio?</h2>
+        <div class="section-label">El problema</div>
+        <h2 class="section-title">¿Tu espacio no está bien aprovechado?</h2>
+        <p class="section-body">Ambientes mal distribuidos, poca iluminación o instalaciones antiguas pueden afectar tu
+          comodidad y productividad. Muchas remodelaciones terminan siendo lentas, desordenadas y poco funcionales.</p>
       </div>
-      <div class="ben-list">
-        <div class="ben-row fade-in">
-          <div class="ben-icon">⚡</div>
-          <div>
-            <strong>Obras rápidas y limpias</strong>
-            <p>Sin demoliciones innecesarias. El drywall es limpio, rápido y con mínima interrupción de tu rutina.</p>
-          </div>
+      <div class="pain-grid">
+        <div class="pain-card fade-in">
+          <div class="pain-icon">🏚️</div>
+          <h3>Ambientes mal distribuidos</h3>
+          <p>Los espacios sin divisiones pensadas generan ruido, falta de privacidad y pérdida de metros útiles.</p>
         </div>
-        <div class="ben-row fade-in">
-          <div class="ben-icon">📐</div>
-          <div>
-            <strong>Espacios mejor aprovechados</strong>
-            <p>Diseñamos para que cada metro cuadrado tenga sentido y funcione a tu favor.</p>
-          </div>
+        <div class="pain-card fade-in">
+          <div class="pain-icon">🌑</div>
+          <h3>Iluminación deficiente</h3>
+          <p>La luz incorrecta cansa la vista, genera ambientes fríos y resta valor a cualquier propiedad.</p>
         </div>
-        <div class="ben-row fade-in">
-          <div class="ben-icon">💡</div>
-          <div>
-            <strong>Iluminación moderna y eficiente</strong>
-            <p>LED de alta calidad, menor consumo eléctrico y ambientes más cómodos.</p>
-          </div>
-        </div>
-        <div class="ben-row fade-in">
-          <div class="ben-icon">📱</div>
-          <div>
-            <strong>Control desde tu celular</strong>
-            <p>Programá escenas, ajustá intensidades y controlá todo desde donde estés.</p>
-          </div>
-        </div>
-        <div class="ben-row fade-in">
-          <div class="ben-icon">🎯</div>
-          <div>
-            <strong>Soluciones adaptadas a cada cliente</strong>
-            <p>No hay proyectos genéricos. Cada solución es diseñada para tu espacio y presupuesto.</p>
-          </div>
+        <div class="pain-card fade-in">
+          <div class="pain-icon">🔧</div>
+          <h3>Obras lentas y costosas</h3>
+          <p>Remodelaciones sin planificación se estiran, generan desorden y terminan saliendo el doble de lo
+            presupuestado.</p>
         </div>
       </div>
     </div>
-    <div class="fade-in">
-      <div class="ben-card">
-        <div class="ben-card-icon">🏠</div>
-        <h3>Tu espacio, rediseñado</h3>
-        <p>Combinamos conocimiento técnico en obra con tecnología moderna para ofrecerte soluciones completas, bien ejecutadas y con atención al detalle.</p>
-        <div class="ben-card-features">
-          <div class="ben-card-features-title">Cada proyecto incluye:</div>
-          <div class="ben-card-features-list">
-            <div class="ben-card-feature-item">
-              <span class="check-amber">✓</span> Planificación sin costo
-            </div>
-            <div class="ben-card-feature-item">
-              <span class="check-amber">✓</span> Presupuesto detallado
-            </div>
-            <div class="ben-card-feature-item">
-              <span class="check-amber">✓</span> Garantía en mano de obra
-            </div>
-            <div class="ben-card-feature-item">
-              <span class="check-amber">✓</span> Soporte post-instalación
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
+  </section>
 
-<!-- CONFIANZA -->
-<section id="confianza">
-<div class="container">
-  <div class="trust-layout">
-    <div>
+  <!-- SOLUCIÓN -->
+  <section id="solucion">
+    <div class="container">
       <div class="fade-in">
-        <div class="section-label">Por qué confiar en nosotros</div>
-        <h2 class="section-title">Experiencia técnica + visión moderna</h2>
-        <p class="trust-text">Combinamos conocimiento en obra con tecnología para ofrecer soluciones completas y bien ejecutadas. Cada proyecto se realiza con planificación, precisión y atención al detalle.</p>
+        <div class="section-label">Nuestra propuesta</div>
+        <h2 class="section-title">Lo resolvemos de forma simple y profesional</h2>
+        <p class="section-body">Diseñamos e implementamos espacios modernos combinando construcción, iluminación y
+          control inteligente. Todo integrado desde el primer día.</p>
       </div>
-      <div class="trust-features">
-        <div class="trust-feat fade-in">
-          <div class="trust-feat-dot"></div>
-          <strong>Materiales premium</strong>
-          <span>Solo trabajamos con materiales certificados y de primera línea</span>
+      <div class="sol-grid">
+        <div class="sol-card fade-in">
+          <div class="sol-num">01</div>
+          <h3>Construcción en drywall</h3>
+          <p>Divisiones rápidas, limpias y económicas. Adaptamos cada espacio a tus necesidades reales, sin demoliciones
+            innecesarias.</p>
         </div>
-        <div class="trust-feat fade-in">
-          <div class="trust-feat-dot"></div>
-          <strong>Plazo cumplido</strong>
-          <span>Respetamos los tiempos acordados en cada proyecto</span>
+        <div class="sol-card fade-in">
+          <div class="sol-num">02</div>
+          <h3>Iluminación eficiente</h3>
+          <p>Spots, tiras LED y cielorrasos integrados. Diseñamos la luz de cada ambiente para potenciar su
+            funcionalidad y estética.</p>
         </div>
-        <div class="trust-feat fade-in">
-          <div class="trust-feat-dot"></div>
-          <strong>Equipo capacitado</strong>
-          <span>Técnicos especializados en construcción en seco y domótica</span>
-        </div>
-        <div class="trust-feat fade-in">
-          <div class="trust-feat-dot"></div>
-          <strong>Transparencia total</strong>
-          <span>Presupuesto detallado sin costos ocultos</span>
+        <div class="sol-card fade-in">
+          <div class="sol-num">03</div>
+          <h3>Control inteligente</h3>
+          <p>Domótica real desde tu celular. Controlá la iluminación y ambientes con tu smartphone desde donde estés.
+          </p>
         </div>
       </div>
     </div>
-    <div class="fade-in">
-      <div class="trust-quote">
-        <blockquote>"Transformaron nuestra oficina completamente en solo 5 días. Los ambientes quedaron perfectos, la iluminación es increíble y el sistema de control desde el celular es un antes y un después."</blockquote>
-        <div class="trust-author">
-          <div class="author-av">MG</div>
-          <div>
-            <div class="author-name author-name-white">Martín González</div>
-            <div class="author-role">Gerente · Empresa de servicios, CABA</div>
-            <div class="stars">★★★★★</div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="container">
+      <div class="serv-layout">
+        <div>
+          <div class="fade-in">
+            <div class="section-label">Servicios</div>
+            <h2 class="section-title">¿Qué podemos hacer por vos?</h2>
+            <p class="section-body section-body-offset">Cada proyecto incluye planificación, materiales y ejecución. Sin
+              sorpresas.</p>
+          </div>
+          <div class="serv-list">
+            <div class="serv-item fade-in">
+              <div class="serv-check"></div>
+              <div>
+                <strong>Divisiones de ambientes con drywall</strong>
+                <span>Separación de espacios rápida, limpia y con aislación acústica.</span>
+              </div>
+            </div>
+            <div class="serv-item fade-in">
+              <div class="serv-check"></div>
+              <div>
+                <strong>Cielorrasos con iluminación integrada</strong>
+                <span>Terminación premium con spots embutidos y tiras LED.</span>
+              </div>
+            </div>
+            <div class="serv-item fade-in">
+              <div class="serv-check"></div>
+              <div>
+                <strong>Instalación de spots y tiras LED</strong>
+                <span>Iluminación moderna, eficiente y de bajo consumo energético.</span>
+              </div>
+            </div>
+            <div class="serv-item fade-in">
+              <div class="serv-check"></div>
+              <div>
+                <strong>Sistemas de iluminación inteligente</strong>
+                <span>Control desde tu celular o por voz. Escenas y programaciones.</span>
+              </div>
+            </div>
+            <div class="serv-item fade-in">
+              <div class="serv-check"></div>
+              <div>
+                <strong>Remodelaciones rápidas para hogares y oficinas</strong>
+                <span>Obras completas con plazo cumplido y entrega lista para usar.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <div class="serv-visual">
+            <div class="serv-visual-title">¿Por qué elegirnos?</div>
+            <div class="stat-row">
+              <div class="stat-box">
+                <div class="stat-num">+120<span>obras</span></div>
+                <div class="stat-txt">Proyectos realizados</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">5<span>★</span></div>
+                <div class="stat-txt">Calificación promedio</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">48<span>hs</span></div>
+                <div class="stat-txt">Respuesta de presupuesto</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">100<span>%</span></div>
+                <div class="stat-txt">Garantía en mano de obra</div>
+              </div>
+            </div>
+            <div class="tech-tags tech-tags-extra-margin">
+              <span class="tag">Drywall</span>
+              <span class="tag">LED</span>
+              <span class="tag">Domótica</span>
+              <span class="tag amber">Sin obra sucia</span>
+              <span class="tag amber">Entrega rápida</span>
+              <span class="tag">Mobile control</span>
+              <span class="tag amber">Garantizado</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section id="cta">
-<div class="container cta-container">
-  <div class="fade-in">
-    <div class="section-label">¿Empezamos?</div>
-    <h2 class="section-title">Pedí tu presupuesto sin compromiso</h2>
-    <p class="section-body">Contanos qué necesitás y te ayudamos a transformar tu espacio. Respondemos en menos de 48 hs.</p>
-    <div class="cta-btns">
-      <a href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto" class="btn-amber" target="_blank">💬 Contactar por WhatsApp</a>
-      <a href="mailto:contacto@spacetech.com" class="btn-white">Enviar email</a>
+  <!-- PROCESO -->
+  <section id="proceso">
+    <div class="container">
+      <div class="proceso-header fade-in">
+        <div class="section-label">¿Cómo trabajamos?</div>
+        <h2 class="section-title section-title-center">Un proceso simple, sin vueltas</h2>
+      </div>
+      <div class="steps">
+        <div class="step fade-in">
+          <div class="step-num">1</div>
+          <h4>Relevamiento</h4>
+          <p>Visitamos el espacio y entendemos tus necesidades</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-num">2</div>
+          <h4>Diseño</h4>
+          <p>Planificamos la solución más funcional y estética</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-num">3</div>
+          <h4>Ejecución</h4>
+          <p>Llevamos a cabo la obra de manera rápida y ordenada</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-num">4</div>
+          <h4>Instalación</h4>
+          <p>Montamos y configuramos todos los sistemas</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-num">5</div>
+          <h4>Entrega</h4>
+          <p>Tu espacio listo para usar desde el primer día</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  <span class="logo">Forma<span class="footer-logo-accent">lux</span></span>
-  <p>Drywall · Iluminación · Domótica | Buenos Aires, Argentina</p>
-  <p class="footer-copy-margin">© 2025 SpaceTech. Todos los derechos reservados.</p>
-</footer>
+  <!-- BENEFICIOS -->
+  <section id="beneficios">
+    <div class="container">
+      <div class="ben-layout">
+        <div>
+          <div class="fade-in">
+            <div class="section-label">Beneficios</div>
+            <h2 class="section-title">¿Por qué elegir este servicio?</h2>
+          </div>
+          <div class="ben-list">
+            <div class="ben-row fade-in">
+              <div class="ben-icon">⚡</div>
+              <div>
+                <strong>Obras rápidas y limpias</strong>
+                <p>Sin demoliciones innecesarias. El drywall es limpio, rápido y con mínima interrupción de tu rutina.
+                </p>
+              </div>
+            </div>
+            <div class="ben-row fade-in">
+              <div class="ben-icon">📐</div>
+              <div>
+                <strong>Espacios mejor aprovechados</strong>
+                <p>Diseñamos para que cada metro cuadrado tenga sentido y funcione a tu favor.</p>
+              </div>
+            </div>
+            <div class="ben-row fade-in">
+              <div class="ben-icon">💡</div>
+              <div>
+                <strong>Iluminación moderna y eficiente</strong>
+                <p>LED de alta calidad, menor consumo eléctrico y ambientes más cómodos.</p>
+              </div>
+            </div>
+            <div class="ben-row fade-in">
+              <div class="ben-icon">📱</div>
+              <div>
+                <strong>Control desde tu celular</strong>
+                <p>Programá escenas, ajustá intensidades y controlá todo desde donde estés.</p>
+              </div>
+            </div>
+            <div class="ben-row fade-in">
+              <div class="ben-icon">🎯</div>
+              <div>
+                <strong>Soluciones adaptadas a cada cliente</strong>
+                <p>No hay proyectos genéricos. Cada solución es diseñada para tu espacio y presupuesto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <div class="ben-card">
+            <div class="ben-card-icon">🏠</div>
+            <h3>Tu espacio, rediseñado</h3>
+            <p>Combinamos conocimiento técnico en obra con tecnología moderna para ofrecerte soluciones completas, bien
+              ejecutadas y con atención al detalle.</p>
+            <div class="ben-card-features">
+              <div class="ben-card-features-title">Cada proyecto incluye:</div>
+              <div class="ben-card-features-list">
+                <div class="ben-card-feature-item">
+                  <span class="check-amber">✓</span> Planificación sin costo
+                </div>
+                <div class="ben-card-feature-item">
+                  <span class="check-amber">✓</span> Presupuesto detallado
+                </div>
+                <div class="ben-card-feature-item">
+                  <span class="check-amber">✓</span> Garantía en mano de obra
+                </div>
+                <div class="ben-card-feature-item">
+                  <span class="check-amber">✓</span> Soporte post-instalación
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- WHATSAPP FLOAT -->
-<a class="wa-float" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto" target="_blank" aria-label="Contactar por WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-</a>
+  <!-- CONFIANZA -->
+  <section id="confianza">
+    <div class="container">
+      <div class="trust-layout">
+        <div>
+          <div class="fade-in">
+            <div class="section-label">Por qué confiar en nosotros</div>
+            <h2 class="section-title">Experiencia técnica + visión moderna</h2>
+            <p class="trust-text">Combinamos conocimiento en obra con tecnología para ofrecer soluciones completas y
+              bien ejecutadas. Cada proyecto se realiza con planificación, precisión y atención al detalle.</p>
+          </div>
+          <div class="trust-features">
+            <div class="trust-feat fade-in">
+              <div class="trust-feat-dot"></div>
+              <strong>Materiales premium</strong>
+              <span>Solo trabajamos con materiales certificados y de primera línea</span>
+            </div>
+            <div class="trust-feat fade-in">
+              <div class="trust-feat-dot"></div>
+              <strong>Plazo cumplido</strong>
+              <span>Respetamos los tiempos acordados en cada proyecto</span>
+            </div>
+            <div class="trust-feat fade-in">
+              <div class="trust-feat-dot"></div>
+              <strong>Equipo capacitado</strong>
+              <span>Técnicos especializados en construcción en seco y domótica</span>
+            </div>
+            <div class="trust-feat fade-in">
+              <div class="trust-feat-dot"></div>
+              <strong>Transparencia total</strong>
+              <span>Presupuesto detallado sin costos ocultos</span>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <div class="trust-quote">
+            <blockquote>"Transformaron nuestra oficina completamente en solo 5 días. Los ambientes quedaron perfectos,
+              la iluminación es increíble y el sistema de control desde el celular es un antes y un después."
+            </blockquote>
+            <div class="trust-author">
+              <div class="author-av">MG</div>
+              <div>
+                <div class="author-name author-name-white">Martín González</div>
+                <div class="author-role">Gerente · Empresa de servicios, CABA</div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="./script.js"></script>
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container cta-container">
+      <div class="fade-in">
+        <div class="section-label">¿Empezamos?</div>
+        <h2 class="section-title">Pedí tu presupuesto sin compromiso</h2>
+        <p class="section-body">Contanos qué necesitás y te ayudamos a transformar tu espacio. Respondemos en menos de
+          48 hs.</p>
+        <div class="cta-btns">
+          <a href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto" class="btn-amber"
+            target="_blank">💬 Contactar por WhatsApp</a>
+          <a href="mailto:contacto@spacetech.com" class="btn-white">Enviar email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="logo">Forma<span class="footer-logo-accent">lux</span></span>
+    <p>Drywall · Iluminación · Domótica | Buenos Aires, Argentina</p>
+    <p class="footer-copy-margin">© 2025 SpaceTech. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a class="wa-float" href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto"
+    target="_blank" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <script src="./script.js"></script>
 </body>
+
 </html>
